@@ -1,0 +1,26 @@
+{
+  "name": "browser-rendering-optimisation",
+  "version": "1.0.0",
+  "description": "A browser rendering optimisation, submitted as a project for the Udacity Front-End Developer Nanodegree program.",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chocobuckle/browser-rendering-optimisation.git"
+  },
+  "author": "Conor Doyle",
+  "license": "ISC",
+  "keywords": [
+    "udacity",
+    "optimisation",
+    "optimization",
+    "rendering",
+    "Conor Doyle",
+    "chocobuckle"
+  ],
+  "bugs": {
+    "url": "https://github.com/chocobuckle/performance-optimisation/issues"
+  },
+  "homepage": "https://github.com/chocobuckle/performance-optimisation#readme",
+  "dependencies": {},
+  "devDependencies": {}
+}
