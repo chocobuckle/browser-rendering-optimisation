@@ -1,6 +1,6 @@
 # Browser Rendering Optimisation
 
-A broswer rendering optimisation, submitted as a project for the Udacity Front-End Developer Nanodegree program.
+A browser rendering optimisation, submitted as a project for the Udacity Front-End Developer Nanodegree program.
 
 ## Introduction
 
@@ -8,11 +8,11 @@ Understanding lower-level concepts regarding how the browser works and interpret
 
 ## Project Details
 
-In the second part of the project I was given two tasks. First, to optimise 'main.js' so that 'index.html' renders with a consistent frame-rate of 60fps while scrolling, and second, to ensure that the time to resize the pizzas using the slider is less than 5ms. The site provided was purposefully designed badly and ignores numerous web development best practices, resulting in a poor user experience.
+In this project I was given two tasks. First, to optimise 'main.js' so that 'index.html' renders with a consistent frame-rate of 60fps while scrolling, and second, to ensure that the time to resize the pizzas using the slider is less than 5ms. The site provided was purposefully designed badly and ignores numerous web development best practices, resulting in a poor user experience.
 
 ![Screenshot of pizzeria website.](./screenshots/pizzeria-website.jpg?raw=true "Pizzeria website.")
 
-Please click [here](https://chocobuckle.github.io/rendering-before-optimisation/) to experience the slow, unoptimised version of the site as originally provided to me.
+Please click [here](https://chocobuckle.github.io/rendering-optimisation-before/) to experience the slow, unoptimised version of the site as originally provided to me.
 
 Below you can see a performance timeline profile of the unoptimised site, as captured in Chrome DevTools...
 
