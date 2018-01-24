@@ -2,6 +2,8 @@
 
 A browser rendering optimisation, submitted as a project for the Udacity Front-End Developer Nanodegree program.
 
+![Screenshot of Chrome Dev Tools.](./devtools-720.jpg "Chrome Dev Tools")
+
 ## Introduction
 
 Understanding lower-level concepts regarding how the browser works and interprets code enables a developer to produce highly performant applications. The project showcases my skills in identifying browser rendering bottlenecks and optimising the code accordingly for maximum user experience.
@@ -10,13 +12,13 @@ Understanding lower-level concepts regarding how the browser works and interpret
 
 In this project I was given two tasks. First, to optimise 'main.js' so that 'index.html' renders with a consistent frame-rate of 60fps while scrolling, and second, to ensure that the time to resize the pizzas using the slider is less than 5ms. The site provided was purposefully designed badly and ignores numerous web development best practices, resulting in a poor user experience.
 
-![Screenshot of pizzeria website.](./screenshots/pizzeria-website.jpg?raw=true "Pizzeria website.")
+![Screenshot of pizzeria website.](./pizzeria-website.jpg?raw=true "Pizzeria website.")
 
 Please click [here](https://chocobuckle.github.io/rendering-optimisation-before/) to experience the slow, unoptimised version of the site as originally provided to me.
 
 Below you can see a performance timeline profile of the unoptimised site, as captured in Chrome DevTools...
 
-![Screenshot of Chrome DevTools performance timeline, before optimisations.](./screenshots/timeline-before.jpg?raw=true "DevTools performance timeline, before optimisations.")
+![Screenshot of Chrome DevTools performance timeline, before optimisations.](./timeline-before.jpg?raw=true "DevTools performance timeline, before optimisations.")
 
 The red bar stretching across the top of the screen indicates long frames and severe 'jank' problems. Beneath this, the low green chart indicates that the page is creeping along at a very slow FPS rate. The next chart below that reveals large amounts of CPU resources being consumed by Javascript(yellow) and CSS(purple) processing. The flame chart represents a visualisation of the CPUT stack trace, and in this case is showing repeated forced synchronous layout calculations, as indicated by the red triangles in the top-right corner of each purple layout event. Finally, the summary pie chart at the bottom of the screen reveals that most of the browser's time is being spent processing performance instensive scripting and rendering. In regards to changing the pizza sizes with the slider, the response time is reported in the DevTools console as approximately 100 - 120ms, which is far too slow for what should be a simple operation.
 
@@ -33,11 +35,11 @@ The optimisations I have implemented to address all the above issues are as foll
 
 Below is a screenshot of the DevTools performance timeline after all the above optimisations were implemented...
 
-![Screenshot of Chrome DevTools performance timeline, after optimisations.](./screenshots/timeline-after.jpg?raw=true "DevTools performance timeline, after optimisations.")
+![Screenshot of Chrome DevTools performance timeline, after optimisations.](./timeline-after.jpg?raw=true "DevTools performance timeline, after optimisations.")
 
 Here, a consistent 60FPS is achieved, 'jank' is gone, CPU calculations are minimal, the flame chart is no longer alerting forced synchronous layout events, and the summary pie chart shows that the browser is spending far less time scripting, rendering, and painting. The end result is a greatly improved user experience.
 
-Please click [here](https://chocobuckle.github.io/browser-rendering-optimisation/) to view the fully optimised page.
+Please click [here](https://chocobuckle.github.io/rendering-optimisation-after/) to view the fully optimised page.
 
 ## Licence
 
